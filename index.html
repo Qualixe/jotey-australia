@@ -18,15 +18,17 @@
     }
     .container {
       max-width: 600px;
-      padding: 20px;
+      padding: 20px 40px;
       background: #ffffffeb;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     h1 {
-      font-size: 40px;
+      font-size: 50px;
       color: #000;
-      margin-bottom: 10px;
+      margin-bottom: 0;
+      margin-top: 5px;
+      line-height: 1.2;
       text-transform: uppercase;
       font-weight: 400;
     }
@@ -35,6 +37,7 @@
       color: #444;
       /* margin-bottom: 20px; */
       margin: 0;
+      margin-bottom: 12px;
     }
     .email-input {
       width: 70%;
@@ -60,13 +63,37 @@
     .logo-img {
       width: 100%;
       height: auto;
-      max-width: 320px;
+      max-width: 220px;
       margin: 0 auto;
   }
 
   .logo {
       display: block;
       margin-top: 25px;
+  }
+
+  .container h2 {
+    color: #000;
+    font-size: 31px;
+    max-width: 410px;
+    margin: 0 auto;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width:767px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .container h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 16px;
+    }
   }
   </style>
 </head>
@@ -75,11 +102,12 @@
     <div class="logo">
       <img class="logo-img" src="logo.png" alt="img">
     </div>
-    <h1>Jotey Australia | Ecommerce Platform Coming Soon </h1>
-    <p>We’re preparing a dedicated experience just for Australia.<br>
-    Our new website will be live soon with the same quality you trust—made better for you.</p>
+    <h1><strong>Jotey Australia</strong> </h1>
+    <h2>E-commerce Platform Coming Soon </h2>
+    <p>We’re preparing a dedicated experience just for Australia.</p>
+    <p>Our new website will be live soon with the same quality you trust<br> — made better for you.</p>
 
-    <div class="countdown-wrapper" style="display:flex; gap:20px; justify-content:center; margin-top:30px;">
+    <div class="countdown-wrapper" style="display:flex; gap:12px; justify-content:center; margin-top:30px;">
       <div class="time-box"><span id="days">00</span><p>Days</p></div>
       <div class="time-box"><span id="hours">00</span><p>Hours</p></div>
       <div class="time-box"><span id="minutes">00</span><p>Minutes</p></div>
@@ -113,15 +141,19 @@
     <style>
       .time-box {
         background: rgba(255, 255, 255, 0.1);
-        padding: 20px 30px;
+        padding: 20px 28px;
         border-radius: 10px;
         backdrop-filter: blur(10px);
         border: 1px solid #ccc;
         text-align: center;
         color: #fff;
       }
+      .time-box p {
+          margin: 0;
+          font-size: 13px;
+      }
       .time-box span {
-        font-size: 48px;
+        font-size: 30px;
         font-weight: bold;
         display: block;
         color: #000;
